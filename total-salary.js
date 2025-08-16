@@ -7,7 +7,8 @@ const employees = [
 function getMonthlyTotalSalary(employeeList) {
   let monthlyTotalSalary = 0;
   for (const emp of employeeList) {
-    const currentMonthSalary = emp.experience * emp.increment + emp.starting;
+    // prettier-ignore
+    const currentMonthSalary = (emp.experience * emp.increment) + emp.starting;
     monthlyTotalSalary += currentMonthSalary;
   }
   return monthlyTotalSalary;
